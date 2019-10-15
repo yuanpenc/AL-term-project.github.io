@@ -1,5 +1,13 @@
 # Smart Bathroom
-Xinmiao Liu; Mengmeng Pan; Yuanpeng Cao; Peng Zeng
+
+**Course**: 12740
+
+**Group ID** : AL
+
+**Group Member**: Xinmiao Liu; Mengmeng Pan; Yuanpeng Cao; Peng Zeng
+
+### [Progress report 1 （9.28）](https://github.com/yuanpenc/Yuanpeng.github.io/blob/master/progress%20report/progress%20report%201(9.28).md)
+### [Video]()
 
 ## Introduction
 Our project aims to create a better bathing environment. We use the humidity sensor to detect the humidity in the bathroom and control the switch of the fan and the sound detection sensor to create lights to accompany with music.
