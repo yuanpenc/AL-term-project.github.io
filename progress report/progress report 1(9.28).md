@@ -17,7 +17,7 @@ When taking a bath, the humidity inside the bathroom will rise. Therefore, no ma
 ## Current Progress
 We learnt how to connect the Temperature and & Humidity Sensor Module to the Raspberry pi and test it to get some data through Adafruit.
 <p align="center">
-  <img src="./img/pr11/WeChat Image_20191015140900.png" width="700">
+  <img src="/img/pr11/chart1.png" width="500">
 </p>
 
 The figure below shows what we connect DHT11 to Raspberry Pi.
