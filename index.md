@@ -40,7 +40,7 @@ The specific goals to be achieved in the process of reaching the final goal are 
 The relative humidity (RH) of an air–water mixture is defined as the ratio of the partial pressure of water vapor in the mixture to the equilibrium vapor pressure of water over a flat surface of pure water at a given temperature. It is normally expressed as a percentage; a higher percentage means that the air–water mixture is more humid. At 100% relative humidity, the air is saturated and is at its dewpoint.
 
 <p align="center">
-  <img src="/img/pr11/humid.jpg" width="400">
+  <img src="./img/pr11/humid.jpg" width="400">
 </p>
 
 <p align="center">
