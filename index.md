@@ -198,14 +198,6 @@ As we expected, one of our testing data is similar to the experiment expectation
 2. Mode 1 is the best:
 
 <p align="center">
-  <img src="/img/pr11/Electrical Work in Different Modules.png" width="700">
-</p>
-
-<p align="center">
-  Figure3. Electrical Work in Different Modes
-</p>
-
-<p align="center">
   Table1. Raw Data of three Modes
 </p>
 
@@ -219,6 +211,14 @@ As we expected, one of our testing data is similar to the experiment expectation
 
 <p align="center">
   <img src="/img/pr11/Power consumptions of three Modules.png" width="700">
+</p>
+
+<p align="center">
+  <img src="/img/pr11/Electrical Work in Different Modules.png" width="700">
+</p>
+
+<p align="center">
+  Figure3. Electrical Work in Different Modes
 </p>
 
 <p align="center">
