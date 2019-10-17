@@ -7,6 +7,8 @@
 **Group Member**: Xinmiao Liu; Mengmeng Pan; Yuanpeng Cao; Peng Zeng
 
 ### [Progress report 1 （9.28）](https://github.com/yuanpenc/Yuanpeng.github.io/blob/master/progress%20report/progress%20report%201(9.28).md)
+### [Progress report 2 （10.3）](https://github.com/yuanpenc/AL-term-project.github.io/blob/master/progress%20report/progress%20report%202(10.3).md)
+
 ### [Video]()
 
 ## Introduction
