@@ -44,7 +44,7 @@ The relative humidity (RH) of an air–water mixture is defined as the ratio of 
 </p>
 
 <p align="center">
-  Figure1. Comfortable humidity environment
+  Figure 1. Comfortable humidity environment
   (https://www.brighthubengineering.com/hvac/81719-best-indoor-humidity-range-for-people-books-and-electronics/)
 </p>
 
@@ -64,11 +64,11 @@ Sound signal: Sound signal is detected by sound intensity, which is defined as t
 The average sound intensity during time T is given by
 
 <p align="center">
-  <img src="/img/pr11/fomula1.png" width="200">
+  <img src="/img/pr11/fomula1.png" width="150">
 </p>
 Also,
 <p align="center">
-  <img src="/img/pr11/fomula2.png" width="200">
+  <img src="/img/pr11/fomula2.png" width="150">
 </p>
 Where,ν is frequency of sound,δ is the amplitude of the sound wave particle displacement,ρ is density of medium in which sound is traveling,c is speed of sound.
 
@@ -76,7 +76,11 @@ Where,ν is frequency of sound,δ is the amplitude of the sound wave particle di
 
 #### DHT11
 <p align="center">
-  <img src="/img/pr11/sensor1.png" width="300">
+  <img src="./img/pr11/sensor1.png" width="300">
+</p>
+
+<p align="center">
+  Figure 2. The Temperature and Humidity Sensor
 </p>
 
 #####	Physical Principles
@@ -93,12 +97,20 @@ The ranges and accuracy of the DHT11:
 * Temperature Accuracy: ±2% °C
 * Operating Voltage: 3V to 5.5V
 <p align="center">
-  <img src="/img/pr11/final chart1.png" width="500">
+  Table 1. Properties of DHT11
+</p>
+
+<p align="center">
+  <img src="./img/pr11/final chart1.png" width="500">
 </p>
 
 #### 1PCS 3pin Voice Sound Detection Sensor Module
 <p align="center">
-  <img src="/img/pr11/sound module sensor.png" width="300">
+  <img src="./img/pr11/sound module sensor.png" width="300">
+</p>
+
+<p align="center">
+  Figure 3. The Sound Detection Sensor
 </p>
 
 ##### Physical Principles
@@ -109,7 +121,11 @@ This is a multipurpose sound sensor which can be used to sense sound and audio. 
 
 ##### Sensor Characteristics
 <p align="center">
-  <img src="/img/pr11/sound module char.png" width="500">
+  <img src="./img/pr11/sound module char.png" width="500">
+</p>
+
+<p align="center">
+  Figure 4. The Sound Detection Sensor
 </p>
 
 * It can detect the intensity of the sound environment. The sensor can only identify the presence of sound, cannot recognize the sound or the size of the particular frequency of sound
@@ -118,10 +134,6 @@ This is a multipurpose sound sensor which can be used to sense sound and audio. 
 * Output form digital switch output 
 
 When less sensitive, it takes more sound to trigger the device and when more sensitive, it takes less sound to trigger the device. Three instructions Sound module sound intensity is the most sensitive to the environment, commonly used to detect the intensity of the sound of the surroundings. Module in the intensity of the sound environment than set threshold, the OUT output high level, when the intensity of the sound from the outside environment more than set threshold, the module OUT output low level. This sensor can be directly driven relay module, which can form a voice-activated switch.
-
-
-
-
 
 ## Experiments
 Several tests were conducted to ensure the project was working as expected:
@@ -140,15 +152,15 @@ More details show in the video!
 At the beginning, we set three different modules as the following sheet.
 
 <p align="center">
-  Table1. Fans' behaviors coresponding to different conditions
+  Table 2. Fans' behaviors coresponding to different conditions
 </p>
 <p align="center">
-  <img src="/img/pr11/princ table.png" width="700">
+  <img src="./img/pr11/princ table.png" width="700">
 </p>
 
 Then, we don’t know the fan efficiency, so we cannot calculate the fan work. However, we know the rated voltage and the rated current of two fans, therefore, we can calculate the rated power theoretically. Due to the above reason, if we can know how long the fan works, we can calculate the power consumption of them. We decide to use control variates method in order to eliminate the external interference. However, because it is hard to control the humidity in the experiment box when we use the portable garment steamer to humidify the box, we set the same time to humidify to promise the vapor the box gets is the same. After the fan turning off, we can get the time how long the humidity becomes from high humidity to low humidity and use the following function to calculate the power consumption.
 <p align="center">
-  <img src="/img/pr11/exper fomula1.png" width="200">
+  <img src="./img/pr11/exper fomula1.png" width="150">
 </p>
 Where, P is the power consumption, U is the rated voltage, I is the rated current and T is the measuring time.
 
@@ -171,11 +183,11 @@ Where, P is the power consumption, U is the rated voltage, I is the rated curren
 In order to keep the indoor humidity to reach the pre-setting value and promise the effect of removing vapor with the lowest energy consumption, our group set up two fans with delay. When the humidity is lower than 70%, the first fan will turn off in 30s to promise that the humidity will not return higher than 70%. The same thing happens below 50%. The method can be explained as the following figure:
 
 <p align="center">
-  <img src="/img/pr11/ExperimentExpectation.png" width="700">
+  <img src="./img/pr11/ExperimentExpectation.png" width="700">
 </p>
 
 <p align="center">
-  Figure1. Experiment Expectation
+  Figure 5. Experiment Expectation
 </p>
 
 We expect the relationship between the fan and the indoor relative humidity to be shown in the figure. Assuming that at 8 seconds, the humidity in the box reaches 30% and starts to gradually increase. At this time, the first fan will turn on. At 91 seconds, the humidity exceeds 70%, the second fan opens and both two fans are running. When the humidity is lower than 50%, which is 252 seconds, the second fan turns off and only one fan is running. When the humidity lowers down to 35% gradually, which is 293 seconds, because we set a delay of 60s, the last one fan will turn off at 353 seconds.
@@ -186,11 +198,11 @@ Because of the real indoor environment, we change the criteria of the setting hu
 1. Meet our Expectation:
 
 <p align="center">
-  <img src="/img/pr11/One of the Data Result.png" width="700">
+  <img src="./img/pr11/One of the Data Result.png" width="700">
 </p>
 
 <p align="center">
-  Figure2. One of the Data Result
+  Figure 6. One of the Data Result
 </p>
 
 As we expected, one of our testing data is similar to the experiment expectation figure xx. At 133 seconds, the humidity was lower than 65%, the second fan was not turning off until 30 seconds later, which is 161 seconds. At 291 seconds, the humidity reached at 55%, the first fan did not stop until 30s later proximately. All of these reach our experiment expectation.
@@ -198,35 +210,35 @@ As we expected, one of our testing data is similar to the experiment expectation
 2. Mode 1 is the best:
 
 <p align="center">
-  Table1. Raw Data of three Modes
+  Table 3. Raw Data of three Modes
 </p>
 
 <p align="center">
-  <img src="/img/pr11/Raw Data of three Modules.png" width="700">
+  <img src="./img/pr11/Raw Data of three Modules.png" width="700">
 </p>
 
 <p align="center">
-  Table2. Power consumptions of three Modes
+  Table 4. Power consumptions of three Modes
 </p>
 
 <p align="center">
-  <img src="/img/pr11/Power consumptions of three Modules.png" width="700">
+  <img src="./img/pr11/Power consumptions of three Modules.png" width="700">
 </p>
 
 <p align="center">
-  <img src="/img/pr11/Electrical Work in Different Modules.png" width="700">
+  <img src="./img/pr11/Electrical Work in Different Modules.png" width="700">
 </p>
 
 <p align="center">
-  Figure3. Electrical Work in Different Modes
+  Figure 7. Electrical Work in Different Modes
 </p>
 
 <p align="center">
-  Table3. Data Analysis of three Modes
+  Table 5. Data Analysis of three Modes
 </p>
 
 <p align="center">
-  <img src="/img/pr11/Data Analysis of three Modules.png" width="700">
+  <img src="./img/pr11/Data Analysis of three Modules.png" width="700">
 </p>
 
 After collecting and cleaning all the sets of data, we make the figure and sheets above. The figure 1 is about the electrical work in different modules. The table1 is the raw data, which is about how long the time of humidity decreasing from 95% to 55%. In the mode1, the first column is 30s/140s, which means how long two fans worked together and how long the last one fan worked when the second fan closed. In other words, it took 30s for two fans working and took 140s for last one fan working. The table2 is shown the total power consumption of each mode in each time. The orange blank means the bad value, which we need to exclude. We use excel to help us make the data analysis. From the table3, we can know that the mean of mode 1 is the smallest, which means that over the 23 experiment times, the mode 1 cost the lowest electric consumption. The standard deviation of the Mode 1 is also the smallest, which means the fluctuation of data is the smallest. Both double fans and single fans are not stable. Although the range is not the smallest, we think it can be accepted compared with others. To sum up, the mode 1 is the best way to lower the humidity in model bathroom compared with the mode 2 and mode 3.
@@ -238,9 +250,12 @@ We basically achieved our original goal of creating a fan that can automatically
 
 The error in the project comes from three sources. 
 
-* Sensor:Our project uses sound detect sensor, and temperature and humidity sensor. For the temperature and humidity sensor, the error mainly comes from the nonlinearity of transfer function and the poor accuracy. 
-* Noise:For the sound detection sensor, it is affected by the noise from both the circuit and the surrounding environment. When the sound sensor is very sensitive, the tiny sound will trigger the flicker of the light. For the temperature and humidity sensor, the situation is better.
-* Control:As the test box is very small, when we use the steamer to simulate the shower mist, the air humidity in the box will increase to a high level instantly, making the two fans start to work almost at the same time. 
+* Sensor
+Our project uses sound detect sensor, and temperature and humidity sensor. For the temperature and humidity sensor, the error mainly comes from the nonlinearity of transfer function and the poor accuracy. 
+* Noise
+For the sound detection sensor, it is affected by the noise from both the circuit and the surrounding environment. When the sound sensor is very sensitive, the tiny sound will trigger the flicker of the light. For the temperature and humidity sensor, the situation is better.
+* Control
+As the test box is very small, when we use the steamer to simulate the shower mist, the air humidity in the box will increase to a high level instantly, making the two fans start to work almost at the same time. 
 
 ## OpenChirp
 OpenChirp is a management framework for Low-Power Wide-Area Networks (LP-WAN) that provides data context, storage, visualization, and access control over the web. We can directly utilize openchirp to control the switch of lights and fans. To relize this, we set up connettion between Raspberry Pi and OpenChirp, and then we run command on the openchrip webpage and send signal to our actuator devices. In that case, we can realize the goal of remoting control actuators.
@@ -248,20 +263,20 @@ OpenChirp is a management framework for Low-Power Wide-Area Networks (LP-WAN) th
 Following are pictures of the results of our code and images drawn by OpenChirp websit.
 
 <p align="center">
-  <img src="/img/pr11/openchirp code result.png" width="700">
+  <img src="./img/pr11/openchirp code result.png" width="700">
 </p>
 
 <p align="center">
-  Figure2. results of Raspberry-Openchirp codes 
+  Figure 8. results of Raspberry-Openchirp codes 
 </p>
 After we click Fan on and light on buttons as we shown in the video, the results of codes turn out to be 1, which means the light and fan are already turn on. Otherwise, if we run the Fan off and light off commands, the results begin to be 0, which means light off and fan off. 
 
 <p align="center">
-  <img src="/img/pr11/openchirp images.png" width="700">
+  <img src="./img/pr11/openchirp images.png" width="700">
 </p>
 
 <p align="center">
-  Figure2. Binary values of fan and light  
+  Figure 9. Binary values of fan and light  
 </p>
 
 The images generated by OpenChirp are corresponding to the values detected by Raspberry Pi. We realized the goal of remoting control actuators by assistance of OpenChirp .
@@ -272,7 +287,9 @@ Also, we published the data detected by DHT11 sensor. The line chart is time ser
   <img src="/img/pr11/openchirp tem&hum.png" width="700">
 </p>
 
-
+<p align="center">
+  Figure 10. Time series for the change of humidity and temperature  
+</p>
 
 ## Discussion
 
