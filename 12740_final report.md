@@ -10,15 +10,22 @@
 ### [Video]()
 
 ## Introduction
-Our project aims to create a better bathing environment. We use the humidity sensor to detect the humidity in the bathroom and control the switch of the fan and the sound detection sensor to create lights to accompany with music.
+With the rapid development of science and technology, our life is becoming more and more convenient, the intelligent level of household is also improving. The bathroom, a place we use every day, naturally attracts us to make more efforts to make it smarter. 
+
+Our project aims to create a better bathing environment through ‘smart fans’ and ‘smart lights’. The ‘smart fan’ can switch on and off automatically. So, we don't have to worry about forgetting to turn off the fan after a shower. Many people like to play music in the shower, our ‘smart light’ will flash to the rhythm of music, which make your shower time more fun.
+
 
 ## Motivation
-When taking a bath, the humidity inside the bathroom will rise. Therefore, no matter when bathing or after bathing should be timely ventilation, that is, should let air flow. This is especially important to the elderly and children to assure their breath open when taking bath. Meanwhile, the moist environment is a breeding ground for bacteria. Accordingly, it is very necessary that let the bathroom return dry and clean as soon as possible. But it takes a while for the bathroom to get dry again, and sometimes people may forget to turn off the fan, so it would be nice if the fan could automatically turn off when the bathroom returns dry. Also, having a bath with music is a pleasure. It would be better if you could play music with cool lighting.
+When taking a bath, the humidity inside the bathroom will rise. Therefore, no matter when bathing or after bathing should be timely ventilation, that is, should let air flow. This is especially important to the elderly and children to assure their breath open when taking bath. Meanwhile, the moist environment is a breeding ground for bacteria. Accordingly, it is very necessary that let the bathroom return dry and clean as soon as possible. But it takes a while for the bathroom to get dry again, and sometimes people may forget to turn off the fan, so it would be nice if the fan could automatically turn off when the bathroom returns dry. Taking shower is usually boring, and bathrooms are often decorated in a simple style. Our ‘smart lights’ will make the bathroom more colorful, and the flashing lights along with the rhythm makes shower time fun.
 
-## Goals
-* Our goal is to understand the capabilities of the sensors used, implement the concepts learned during the data acquisition process, and learn how to integrate sensors as components into larger systems. 
-* Learn how to use humidity sensors to control fan switches.
-* Learn how to let the lights flash according to music with sound detection sensor.
+## Specific Goals
+The overall goal of our project is to use temperature and humidity sensor to detect the humidity in the bathroom and control the switch of the fans through the relay module. Also, sound detection sensor to detect the music sound that plays while you are in the shower.
+The specific goals to be achieved in the process of reaching the final goal are as follows:
+
+* Using a sound detect sensor to detect the playing music. 
+* Using DHT11 to detect the humidity and temperature in the environment.
+* Using codes to let DHT11 control the switch of fans.
+*	Connect all the sensors and actuators to the raspberry pi simultaneously.
 
 # For progress report
 
