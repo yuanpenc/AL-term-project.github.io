@@ -132,22 +132,27 @@ Then, for the smart light part. Run the code and play the music, we can see that
 More details show in the video!
 
 ### Efficiency and Power Consumption of Different Fans' Modes
+#### Experiment Purpose
+1. Verify the feasibility of the model
+2. Find the best solution
 
-#### Experiment Expectation
-In order to keep the indoor humidity to reach the pre-setting value and promise the effect of removing vapor with the lowest energy consumption, our group set up two fans with delay. When the humidity is lower than 70%, the first fan will turn off in 30s to promise that the humidity will not return higher than 30%. The same thing happens below 70%. The method can be explained as the following figure:
+#### Experiment Principle
+At the beginning, we set three different modules as the following sheet.
 
 <p align="center">
-  <img src="/img/pr11/exper E.png" width="700">
+  Table1. Fans' behaviors coresponding to different conditions
 </p>
-
 <p align="center">
-  Figure1. Experiment Expectation
+  <img src="/img/pr11/princ table.png" width="700">
 </p>
 
-Then, we don’t know the fan efficiency, so we can not calculate the fan. However, we know the rated voltage and the rated current of two fans, therefore, we can calculate the rated power theoretically. Due to the above reason, if we can know how long the fan works, we can calculate the power consumption of them. We decide to use control variates method in order to eliminate the external interference. However, because it is hard to control the humidity in the experiment box when we use the portable garment steamer to humidify the box, we set the same time to humidify to promise the vapor the box gets is the same. After the fan turning off, we can get the time how long the humidity becomes from 95% to 55% and use the following function to calculate the power consumption.
-We expect the relationship between the fan and the indoor relative humidity to be shown in the figure. Assuming that at 8 seconds, the humidity in the box reaches 30% and starts to gradually increase. At this time, the first fan will turn on. At 91 seconds, the humidity exceeds 70%, the second fan opens and both two fans are running. When the humidity is lower than 50%, which is 252 seconds, the second fan turns off and only one fan is running. When the humidity lowers down to 35% gradually, which is 293 seconds, because we set a delay of 60s, the last one fan will turn off at 353 seconds.
+Then, we don’t know the fan efficiency, so we cannot calculate the fan work. However, we know the rated voltage and the rated current of two fans, therefore, we can calculate the rated power theoretically. Due to the above reason, if we can know how long the fan works, we can calculate the power consumption of them. We decide to use control variates method in order to eliminate the external interference. However, because it is hard to control the humidity in the experiment box when we use the portable garment steamer to humidify the box, we set the same time to humidify to promise the vapor the box gets is the same. After the fan turning off, we can get the time how long the humidity becomes from high humidity to low humidity and use the following function to calculate the power consumption.
+<p align="center">
+  <img src="/img/pr11/exper fomula1.png" width="200">
+</p>
+Where, P is the power consumption, U is the rated voltage, I is the rated current and T is the measuring time.
 
-#### Experiment Step
+#### Experiment Steps
 1. Start the Raspberry Pi and use the terminal to connect it.
 2. Use the tmux to set four screens.
 3. Open ‘Fan1-test.py’, ‘Fan2-test.py’, ‘Sound1.py’ and ‘Sound2.py’ into four screens separately.
@@ -157,43 +162,74 @@ We expect the relationship between the fan and the indoor relative humidity to b
 7. After ten seconds, turn off the portable garment steamer.
 8. When the fans turn off, read and clean the data.
 9. Repeat the steps 5 to 8 five times to get five sets of data
-10. Calculate the time how long the humidity becomes from 95% to 55%.
+10. Calculate the time how long the humidity becomes from high humidity to low humidity.
 11. Calculate the mode, standard deviation and confidence intervals of the fan power consumption.
 12. Change the codes into three conditions and repeat the steps 5 to 11.
 13. Compare three sets of data and find the best condition to remove the vapor.
 
-#### Experiment Principle
-At the beginning, we set three different conditions as the following sheet.
+#### Experiment Expectation
+In order to keep the indoor humidity to reach the pre-setting value and promise the effect of removing vapor with the lowest energy consumption, our group set up two fans with delay. When the humidity is lower than 70%, the first fan will turn off in 30s to promise that the humidity will not return higher than 70%. The same thing happens below 50%. The method can be explained as the following figure:
 
 <p align="center">
-  Table1. Fans' behaviors coresponding to different conditions
+  <img src="/img/pr11/ExperimentExpectation.png" width="700">
 </p>
-<p align="center">
-  <img src="/img/pr11/princ table.png" width="700">
-</p>
-
-Then, we don’t know the fan efficiency, so we cannot calculate the energy consumption of fan. However, we know the rated voltage and the rated current of two fans, therefore, we can calculate the rated power theoretically. Due to the above reason, if we can know how long the fan works, we can calculate the power consumption of them. We decide to use control variates method in order to eliminate the external interference. However, because it is hard to control the humidity in the experiment box when we use the portable garment steamer to humidify the box, we set the same time to humidify to promise the vapor the box gets is the same. After the fan turning off, we can get the time how long the humidity becomes from 95% to 55% and use the following function to calculate the power consumption.
 
 <p align="center">
-  <img src="/img/pr11/exper fomula1.png" width="200">
+  Figure1. Experiment Expectation
 </p>
-Where, P is the power consumption, U is the rated voltage, I is the rated current and T is the measuring time.
 
+We expect the relationship between the fan and the indoor relative humidity to be shown in the figure. Assuming that at 8 seconds, the humidity in the box reaches 30% and starts to gradually increase. At this time, the first fan will turn on. At 91 seconds, the humidity exceeds 70%, the second fan opens and both two fans are running. When the humidity is lower than 50%, which is 252 seconds, the second fan turns off and only one fan is running. When the humidity lowers down to 35% gradually, which is 293 seconds, because we set a delay of 60s, the last one fan will turn off at 353 seconds.
 
 #### Experiment Conclusion
+Because of the real indoor environment, we change the criteria of the setting humidity. But it didn’t affect the results. We set the high humidity to 65%, and low humidity to 55%.
+
+1. Meet our Expectation:
 
 <p align="center">
-  <img src="/img/pr11/exper conlu.png" width="700">
+  <img src="/img/pr11/One of the Data Result.png" width="700">
 </p>
 
 <p align="center">
-  Figure2. One of the DHT11 Experiments Results
+  Figure2. One of the Data Result
 </p>
 
+As we expected, one of our testing data is similar to the experiment expectation figure xx. At 133 seconds, the humidity was lower than 65%, the second fan was not turning off until 30 seconds later, which is 161 seconds. At 291 seconds, the humidity reached at 55%, the first fan did not stop until 30s later proximately. All of these reach our experiment expectation.
 
-Because of the indoor temperature and humidity, we change the criteria of the setting humidity. But it didn’t affect the results. As we expected, one of our testing data is similar to the experiment expectation figure xx. At 133 seconds, the humidity was lower than 65%, the second fan was not turning off until 30 seconds later, which is 161 seconds. At 291 seconds, the humidity reached at 55%, the first fan did not stop until 30s later proximately. All of these reach our experiment expectation.
+2. Mode 1 is the best:
 
+<p align="center">
+  <img src="/img/pr11/Electrical Work in Different Modules.png" width="700">
+</p>
 
+<p align="center">
+  Figure3. Electrical Work in Different Modes
+</p>
+
+<p align="center">
+  Table1. Raw Data of three Modes
+</p>
+
+<p align="center">
+  <img src="/img/pr11/Raw Data of three Modules.png" width="700">
+</p>
+
+<p align="center">
+  Table2. Power consumptions of three Modes
+</p>
+
+<p align="center">
+  <img src="/img/pr11/Power consumptions of three Modules.png" width="700">
+</p>
+
+<p align="center">
+  Table3. Data Analysis of three Modes
+</p>
+
+<p align="center">
+  <img src="/img/pr11/Data Analysis of three Modules.png" width="700">
+</p>
+
+After collecting and cleaning all the sets of data, we make the figure and sheets above. The figure 1 is about the electrical work in different modules. The table1 is the raw data, which is about how long the time of humidity decreasing from 95% to 55%. In the mode1, the first column is 30s/140s, which means how long two fans worked together and how long the last one fan worked when the second fan closed. In other words, it took 30s for two fans working and took 140s for last one fan working. The table2 is shown the total power consumption of each mode in each time. The orange blank means the bad value, which we need to exclude. We use excel to help us make the data analysis. From the table3, we can know that the mean of mode 1 is the smallest, which means that over the 23 experiment times, the mode 1 cost the lowest electric consumption. The standard deviation of the Mode 1 is also the smallest, which means the fluctuation of data is the smallest. Both double fans and single fans are not stable. Although the range is not the smallest, we think it can be accepted compared with others. To sum up, the mode 1 is the best way to lower the humidity in model bathroom compared with the mode 2 and mode 3.
 
 ### Comparison to Original Goals
 We basically achieved our original goal of creating a fan that can automatically switch on and off according to humidity, and a light that can flash according to music rhythm. Due to limited conditions, we can only test in the model. If we apply our idea to practice, we need to replace a bigger fan. At the same time, if there are more LED lights, the ‘smart light’ will look fancier.
