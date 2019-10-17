@@ -173,7 +173,7 @@ When less sensitive, it takes more sound to trigger the device and when more sen
 See the picture below: A is an electromagnet, B armature, C spring, D moving contact, and E fixed contacts. There are two fixed contacts, a normally closed one and a normally open one. When the coil is not energized, the normally open contact is the one that is off, while the normally closed one is the other that is on.
 
 <p align="center">
-  <img src="./img/pr11/1.jpg" width="500">
+  <img src="./img/pr11/1.jpg" width="300">
 </p>
 
 <p align="center">
