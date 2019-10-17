@@ -13,7 +13,7 @@
 ### [Progress report 5 （10.13）](https://github.com/yuanpenc/AL-term-project.github.io/blob/master/progress%20report/progress%20report5(10.13).md)
 
 
-### [Video]()
+### [Video](https://youtu.be/v4r1n2Tify8)
 
 ## Introduction
 <p align="center">
@@ -377,8 +377,17 @@ Also, we published the data detected by DHT11 sensor. The line chart is time ser
 * The sound module sensor we used is binary, so we can only get the binary values. In the future, we can change a more advanced sound sensor that can detected the amplitude and frequency of the sound. We can make more fun by controling the light on and off corresponding to not only the amplitude but also the frequnency.
 * We could use Python or Matlab to draw a signal graph and do more signal graph analyzing. For example, we could input a music to Python and output a sound signal graph by using building a mathematical function in Python. The music signal graph is shown as in figure.
 
+<p align="center">
+  <img src="./img/pr11/signal.jpg" width="700">
+</p>
+<p align="center">
+  Figure 19. A music signal graph 
+</p>
 
-
+## Reference
+* https://en.wikipedia.org/wiki/Relative_humidity
+* https://en.wikipedia.org/wiki/Audio_signal
+* https://www.digikey.com/en/articles/techzone/2011/oct/humidity-sensors-and-signal-conditioning-choices
 
 
 
