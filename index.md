@@ -373,6 +373,9 @@ Also, we published the data detected by DHT11 sensor. The line chart is time ser
 </p>
 
 ## Discussion
+* Experimental conditions limit our model to a simple simulation of the idea. Due to the limitation of raspberry pi’s working voltage, we can only choose fans with working voltage of 5V. Low power leads to low exhaust efficiency. If put our ideas into practice, we should replace more power fan to improve work efficiency. If possible, we can use more colorful lights and control them with codes to make the smart lights more fancy.
+* The sound module sensor we used is binary, so we can only get the binary values. In the future, we can change a more advanced sound sensor that can detected the amplitude and frequency of the sound. We can make more fun by controling the light on and off corresponding to not only the amplitude but also the frequnency.
+* We could use Python or Matlab to draw a signal graph and do more signal graph analyzing. For example, we could input a music to Python and output a sound signal graph by using building a mathematical function in Python. The music signal graph is shown as in figure.
 
 
 
