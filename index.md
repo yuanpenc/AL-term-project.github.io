@@ -72,11 +72,11 @@ Sound signal: Sound signal is detected by sound intensity, which is defined as t
 The average sound intensity during time T is given by
 
 <p align="center">
-  <img src="/img/pr11/fomula1.png" width="150">
+  <img src="./img/pr11/fomula1.png" width="150">
 </p>
 Also,
 <p align="center">
-  <img src="/img/pr11/fomula2.png" width="150">
+  <img src="./img/pr11/fomula2.png" width="150">
 </p>
 Where,ν is frequency of sound,δ is the amplitude of the sound wave particle displacement,ρ is density of medium in which sound is traveling,c is speed of sound.
 
