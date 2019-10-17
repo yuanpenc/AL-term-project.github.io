@@ -12,11 +12,14 @@
 ### [Progress report 4 （10.10）](https://github.com/yuanpenc/AL-term-project.github.io/blob/master/progress%20report/progress%20report4(10.10).md)
 ### [Progress report 5 （10.13）](https://github.com/yuanpenc/AL-term-project.github.io/blob/master/progress%20report/progress%20report5(10.13).md)
 
-### [Progress report test](https://github.com/yuanpenc/12740_AL_progressreport/report_3+4.htm)
 
 ### [Video]()
 
 ## Introduction
+<p align="center">
+  <img src="./img/pr11/Bathing.gif" width="400">
+</p>
+
 With the rapid development of science and technology, our life is becoming more and more convenient, the intelligent level of household is also improving. The bathroom, a place we use every day, naturally attracts us to make more efforts to make it smarter. 
 
 Our project aims to create a better bathing environment through ‘smart fans’ and ‘smart lights’. The ‘smart fan’ can switch on and off automatically. So, we don't have to worry about forgetting to turn off the fan after a shower. Many people like to play music in the shower, our ‘smart light’ will flash to the rhythm of music, which makes your shower time more fun.
@@ -29,7 +32,7 @@ When taking a bath, the humidity inside the bathroom will rise. Therefore, no ma
 The overall goal of our project is to use temperature and humidity sensor to detect the humidity in the bathroom and control the switch of the fans through the relay module. Also, sound detection sensor to detect the music sound that plays while you are in the shower.
 The specific goals to be achieved in the process of reaching the final goal are as follows:
 
-* Using a sound detect sensor to detect the playing music. 
+* Using a sound detection sensor to detect the playing music. 
 * Using DHT11 to detect the humidity and temperature in the environment.
 * Using codes to let DHT11 control the switch of fans.
 *	Connect all the sensors and actuators to the raspberry pi simultaneously.
@@ -77,11 +80,19 @@ Where,ν is frequency of sound,δ is the amplitude of the sound wave particle di
 
 #### DHT11
 <p align="center">
-  <img src="./img/pr11/sensor1.png" width="300">
+  <img src="./img/pr11/DHT11.png" width="300">
 </p>
 
 <p align="center">
   Figure 2. The Temperature and Humidity Sensor
+</p>
+
+<p align="center">
+  <img src="./img/pr11/Our DHT11.jpg" width="300">
+</p>
+
+<p align="center">
+  Figure 3. Our DHT11
 </p>
 
 #####	Physical Principles
@@ -102,7 +113,7 @@ The ranges and accuracy of the DHT11:
 </p>
 
 <p align="center">
-  <img src="./img/pr11/final chart1.png" width="500">
+  <img src="./img/pr11/final chart1.png" width="300">
 </p>
 
 #### 1PCS 3pin Voice Sound Detection Sensor Module
@@ -111,7 +122,15 @@ The ranges and accuracy of the DHT11:
 </p>
 
 <p align="center">
-  Figure 3. The Sound Detection Sensor
+  Figure 4. The Sound Detection Sensor
+</p>
+
+<p align="center">
+  <img src="./img/pr11/Our Sound Detection Sensor.jpg" width="300">
+</p>
+
+<p align="center">
+  Figure 5. Our Sound Detection Sensor
 </p>
 
 ##### Physical Principles
@@ -153,10 +172,10 @@ More details show in the video!
 At the beginning, we set three different modules as the following sheet.
 
 <p align="center">
-  Table 2. Fans' behaviors coresponding to different conditions
+  Table 2. Mode of controlling fans
 </p>
 <p align="center">
-  <img src="./img/pr11/princ table.png" width="700">
+  <img src="./img/pr11/Mode of controlling Fans.png" width="700">
 </p>
 
 Then, we don’t know the fan efficiency, so we cannot calculate the fan work. However, we know the rated voltage and the rated current of two fans, therefore, we can calculate the rated power theoretically. Due to the above reason, if we can know how long the fan works, we can calculate the power consumption of them. We decide to use control variates method in order to eliminate the external interference. However, because it is hard to control the humidity in the experiment box when we use the portable garment steamer to humidify the box, we set the same time to humidify to promise the vapor the box gets is the same. After the fan turning off, we can get the time how long the humidity becomes from high humidity to low humidity and use the following function to calculate the power consumption.
@@ -242,7 +261,7 @@ As we expected, one of our testing data is similar to the experiment expectation
   <img src="./img/pr11/Data Analysis of three Modules.png" width="700">
 </p>
 
-After collecting and cleaning all the sets of data, we make the figure and sheets above. The figure 1 is about the electrical work in different modules. The table1 is the raw data, which is about how long the time of humidity decreasing from 95% to 55%. In the mode1, the first column is 30s/140s, which means how long two fans worked together and how long the last one fan worked when the second fan closed. In other words, it took 30s for two fans working and took 140s for last one fan working. The table2 is shown the total power consumption of each mode in each time. The orange blank means the bad value, which we need to exclude. We use excel to help us make the data analysis. From the table3, we can know that the mean of mode 1 is the smallest, which means that over the 23 experiment times, the mode 1 cost the lowest electric consumption. The standard deviation of the Mode 1 is also the smallest, which means the fluctuation of data is the smallest. Both double fans and single fans are not stable. Although the range is not the smallest, we think it can be accepted compared with others. To sum up, the mode 1 is the best way to lower the humidity in model bathroom compared with the mode 2 and mode 3.
+After collecting and cleaning all the sets of data, we make the figure and tables above. The figure 7 is about the electrical work in different modules. The table 3 is the raw data, which is about how long the time of humidity decreasing from 95% to 55%. In the mode1, the first column is 30s/140s, which means how long two fans worked together and how long the last one fan worked when the second fan closed. In other words, it took 30s for two fans working and took 140s for last one fan working. The table 4 is shown the total power consumption of each mode in each time. The orange blank means the bad value, which we need to exclude. We use excel to help us make the data analysis. From the table 5, we can know that the mean of mode 1 is the smallest, which means that over the 23 experiment times, the mode 1 cost the lowest electric consumption. The standard deviation of the mode 1 is also the smallest, which means the fluctuation of data is the smallest. Both double fans and single fans are not stable. Although the range is not the smallest, we think it can be accepted compared with others. To sum up, the mode 1 is the best way to lower the humidity in model bathroom compared with the mode 2 and mode 3.
 
 ### Comparison to Original Goals
 We basically achieved our original goal of creating a fan that can automatically switch on and off according to humidity, and a light that can flash according to music rhythm. Due to limited conditions, we can only test in the model. If we apply our idea to practice, we need to replace a bigger fan. At the same time, if there are more LED lights, the ‘smart light’ will look fancier.
@@ -285,7 +304,7 @@ The images generated by OpenChirp are corresponding to the values detected by Ra
 Also, we published the data detected by DHT11 sensor. The line chart is time series for the change of humidity and temperature.
 
 <p align="center">
-  <img src="/img/pr11/openchirp tem&hum.png" width="700">
+  <img src="./img/pr11/openchirp tem&hum.png" width="700">
 </p>
 
 <p align="center">
