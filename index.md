@@ -18,6 +18,7 @@
 
 
 ### [Video](https://youtu.be/v4r1n2Tify8)
+### [OpenChirp](https://openchirp.io/home/device/5da3e30b466cc60c381e0cdd#properties)
 
 ## Introduction
 <p align="center">
