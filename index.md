@@ -17,7 +17,7 @@
 ### [Progress report 5 （10.13）](https://github.com/yuanpenc/AL-term-project.github.io/blob/master/progress%20report/progress%20report5(10.13).md)
 
 
-### [Video](https://youtu.be/v4r1n2Tify8)
+### [Video](https://vimeo.com/user102264112/review/367174998/90f4738185)
 ### [OpenChirp](https://openchirp.io/home/device/5da3e30b466cc60c381e0cdd#properties)
 
 ## Introduction
