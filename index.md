@@ -341,7 +341,7 @@ The error in the project comes from three sources.
 * Control:As the test box is very small, when we use the steamer to simulate the shower mist, the air humidity in the box will increase to a high level instantly, making the two fans start to work almost at the same time. 
 
 ## OpenChirp
-"OpenChirp is a management framework for Low-Power Wide-Area Networks (LP-WAN) that provides data context, storage, visualization, and access control over the web. We can directly utilize openchirp to control the switch of lights and fans."[6] To relize this, we set up connettion between Raspberry Pi and OpenChirp, and then we run command on the openchrip webpage and send signal to our actuator devices. In that case, we can realize the goal of remoting control actuators.
+"OpenChirp is a management framework, which can provide us with services of data context, storage, visualization, and access control through the web."[6] We can directly utilize openchirp to control the switch of lights and fans. To relize this, we set up connettion between Raspberry Pi and OpenChirp, and then we run command on the openchrip webpage and send signal to our actuator devices. In that case, we can realize the goal of remoting control actuators.
 
 Following are pictures of the results of our code and images drawn by OpenChirp websit.
 
