@@ -17,6 +17,7 @@
 ### [Progress report 5 （10.13）](https://github.com/yuanpenc/AL-term-project.github.io/blob/master/progress%20report/progress%20report5(10.13).md)
 
 
+
 ### [Video](https://vimeo.com/user102264112/review/367174998/90f4738185)
 ### [OpenChirp](https://openchirp.io/home/device/5da3e30b466cc60c381e0cdd#properties)
 
@@ -24,6 +25,10 @@
 <p align="center">
   <img src="./img/pr11/Bathing.gif" width="400">
 </p>
+<p align="center">
+  (https://giphy.com/gifs/disney-cuddling-CqGm2DE1eX5iE)
+</p>
+
 
 With the rapid development of science and technology, our life is becoming more and more convenient, the intelligent level of household is also improving. The bathroom, a place we use every day, naturally attracts us to make more efforts to make it smarter. 
 
@@ -70,16 +75,6 @@ Humidity signal: According to the American Society of Heating, Refrigerating and
 
 Sound signal: “Sound signal is detected by sound intensity, which is defined as the power carried by sound waves per unit area in a direction perpendicular to that area.” [5] Whether the sound signal could be detected is based on the distance of sensor and sound source and music sound signal. Sound signal in our project is a binary signal, which only have value of 0 or 1. In addition, we set the sleep time of sound sensor based on the light effect, which are 0.05s and 0.2s respectively. So the sound signal is detected every 0.05s and 0.2s. 
 
-The average sound intensity during time T is given by
-
-<p align="center">
-  <img src="./img/pr11/fomula1.png" width="150">
-</p>
-Also,
-<p align="center">
-  <img src="./img/pr11/fomula2.png" width="150">
-</p>
-Where,ν is frequency of sound,δ is the amplitude of the sound wave particle displacement,ρ is density of medium in which sound is traveling,c is speed of sound.
 
 ### Sensor(s) Used
 
@@ -89,7 +84,7 @@ Where,ν is frequency of sound,δ is the amplitude of the sound wave particle di
 </p>
 
 <p align="center">
-  Figure 2. The Temperature and Humidity Sensor
+  Figure 2. The Temperature and Humidity Sensor(http://www.programmersought.com/article/4519520653/)
 </p>
 
 <p align="center">
@@ -127,8 +122,10 @@ The ranges and accuracy of the DHT11:
 </p>
 
 <p align="center">
-  Figure 4. The Sound Detection Sensor
+  Figure 4. The Sound Detection Sensor[7]
 </p>
+
+
 
 <p align="center">
   <img src="./img/pr11/Our Sound Detection Sensor.jpg" width="300">
@@ -150,7 +147,7 @@ This is a multipurpose sound sensor which can be used to sense sound and audio. 
 </p>
 
 <p align="center">
-  Figure 6. The Sound Detection Sensor
+  Figure 6. The Sound Detection Sensor[8]
 </p>
 
 * It can detect the intensity of the sound environment. The sensor can only identify the presence of sound, cannot recognize the sound or the size of the particular frequency of sound
@@ -411,6 +408,10 @@ We also published our data of sound module sensor. The image below only shows tw
 [5] https://en.wikipedia.org/wiki/Sound_intensity
 
 [6] https://openchirp.io/
+
+[7] https://www.google.com/imgres?imgurl=https://ae01.alicdn.com/kf/HTB1qwCPaxD1gK0jSZFKq6AJrVXa8.jpg_q50.jpg&imgrefurl=https://www.aliexpress.com/i/1625383225.html&h=1000&w=1000&tbnid=3z5bB5-B54P9OM&tbnh=225&tbnw=225&usg=K_J-Ob3ECtF-U9uqeKhyZGPlWgVbs=&hl=en&docid=UM3v3gGctfkKdM&itg=1
+
+[8] (https://www.google.com/imgres?imgurl=https%3A%2F%2Frobu.in%2Fwp-content%2Fuploads%2F2017%2F09%2FArduino-Sound-Detection-Sensor-Pin-Outs.png&imgrefurl=https%3A%2F%2Frobu.in%2Fproduct%2Flm393-sound-detection-sensor-module-black%2F&docid=dpZTNGya6KegnM&tbnid=PkIyhLsPK12dlM%3A&vet=10ahUKEwj6-ajbteXlAhVNT98KHXRvC8gQMwgrKAAwAA..i&w=681&h=248&hl=en&bih=568&biw=1280&q=sound%20sensor%20pin%20configuration&ved=0ahUKEwj6-ajbteXlAhVNT98KHXRvC8gQMwgrKAAwAA&iact=mrc&uact=8
 
 
 
