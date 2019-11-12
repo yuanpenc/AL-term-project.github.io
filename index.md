@@ -109,7 +109,7 @@ The ranges and accuracy of the DHT11:
 * Temperature Accuracy: ±2% °C
 * Operating Voltage: 3V to 5.5V
 <p align="center">
-  Table 1. Properties of DHT11
+  Table 1. Properties of DHT11[9]
 </p>
 
 <p align="center">
@@ -412,6 +412,8 @@ We also published our data of sound module sensor. The image below only shows tw
 [7] https://www.google.com/imgres?imgurl=https://ae01.alicdn.com/kf/HTB1qwCPaxD1gK0jSZFKq6AJrVXa8.jpg_q50.jpg&imgrefurl=https://www.aliexpress.com/i/1625383225.html&h=1000&w=1000&tbnid=3z5bB5-B54P9OM&tbnh=225&tbnw=225&usg=K_J-Ob3ECtF-U9uqeKhyZGPlWgVbs=&hl=en&docid=UM3v3gGctfkKdM&itg=1
 
 [8] (https://www.google.com/imgres?imgurl=https%3A%2F%2Frobu.in%2Fwp-content%2Fuploads%2F2017%2F09%2FArduino-Sound-Detection-Sensor-Pin-Outs.png&imgrefurl=https%3A%2F%2Frobu.in%2Fproduct%2Flm393-sound-detection-sensor-module-black%2F&docid=dpZTNGya6KegnM&tbnid=PkIyhLsPK12dlM%3A&vet=10ahUKEwj6-ajbteXlAhVNT98KHXRvC8gQMwgrKAAwAA..i&w=681&h=248&hl=en&bih=568&biw=1280&q=sound%20sensor%20pin%20configuration&ved=0ahUKEwj6-ajbteXlAhVNT98KHXRvC8gQMwgrKAAwAA&iact=mrc&uact=8
+
+[9] https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf
 
 
 
