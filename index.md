@@ -395,8 +395,9 @@ We also published our data of sound module sensor. The image below only shows tw
   <img src="./img/pr11/signal.jpg" width="700">
 </p>
 <p align="center">
-  Figure 20. A music signal graph 
+  Figure 20. A music signal graph(http://sites.music.columbia.edu/cmc/MusicAndComputers/chapter1/01_01.php)
 </p>
+
 
 ## Reference
 [1] https://en.wikipedia.org/wiki/Relative_humidity
