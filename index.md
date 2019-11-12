@@ -46,7 +46,7 @@ The specific goals to be achieved in the process of reaching the final goal are 
 
 
 ### Physical Principles
-The relative humidity (RH) of an air–water mixture is defined as the ratio of the partial pressure of water vapor in the mixture to the equilibrium vapor pressure of water over a flat surface of pure water at a given temperature. It is normally expressed as a percentage; a higher percentage means that the air–water mixture is more humid. At 100% relative humidity, the air is saturated and is at its dewpoint.
+The relative humidity (RH) is the ratio of partial pressure of vapor in the air to the saturate vapor pressure in the air at the same temperature. If the relative humidity in the air is higher, the air is much more humid. When the relative humidity is approaching 100%, the air is saturated with vapor and it is called dewpoint[1].
 
 <p align="center">
   <img src="./img/pr11/humid.jpg" width="400">
@@ -58,18 +58,18 @@ The relative humidity (RH) of an air–water mixture is defined as the ratio of 
 </p>
 
 
-According to the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE), the ideal humidity range for humans is between 30 to 60 percent relative humidity. The ideal is somewhere around 45-55%. Very high levels of humidity contribute to the growth of mold, funguses, dust mites, and other pests. Mold contributes to a number of diseases and thrives in humid climates, generally above 60 percent humidity. For people suffering from asthma and other respiratory disorders, humidity should not exceed 50 percent, as high humidity can aggravate symptoms. Dry or itchy skin conditions are aggravated by low humidity, which tends to dry out the skin.
-
-Sound is represented by audio signal, typically using a level of electrical voltage for analog signals, and a series of binary numbers for digital signals. Audio signals have frequencies in the audio frequency range of roughly 20 to 20,000 Hz, which corresponds to the lower and upper limits of human hearing.
+Sound could be detected because of vibration of sound source. The vibration of sound source can also pass on to the air then detected by the microphone. The sound signal of music have different frequencies between approximately 20 to 20,000Hz, which is the range of frequency human could hear. We always use electrical voltage to analog a series of sound signals and use binary numbers for outputting digital signals[2].
 
 ### Statistic and Dynamic Behavior
-Humidity is a dynamic characteristic since the water content in air is dynamic. In addition,  the unit of humidity we used is relative humidity. Relative humidity (RH) is the ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature. Relative humidity depends on temperature and the pressure of the system of interest.
-A sound signal is an example of a continuous signal that is sampled to result in a discrete signal. In this case, sound waves traveling through the air are recorded as a set of measurements that can then be used to reconstruct the original sound signal, as closely as possible. The sampling rate or sampling frequency is the number of samples taken per time unit. Sound signals are usually measured in Hertz (Hz).
+Relative humidity is measured one second a time and RH would change every second. Since our group simulate the vapor water generated during bathing by portable steamer, relative humidity can increase relative fast compared with reality. Therefore, RH would increase fast at first and then decrease slowly when the fans are working. 
+
+Sound signal in our project is a binary signal, which only have value of 0 or 1. The music sound changed its sound intensity because of the beats and various musical instruments. The sound signal represent the relative high sound intensity in a music. Through set up the sleep time, sound signal catch up the beats with high sound intensity and return 1 to the interface. However, there are little delays to catch up the beats because of the slow response time. 
 
 ### Signal Characteristic
-Humidity signal: When the sensor is in the presence of water vapor it is absorbed, causing the functional ionic groups to disassociate, and resulting in increased conductivity. Response times are slow ranging from 10 to 30s. Most resistive sensors use an AC excitation to prevent sensor polarization. The resulting current is rectified and converted to DC where it can then undergo linearization and be amplified as necessary. The AC signal applied to the bridge ranges from 30 Hz to 10 kHz. As an example consider the TDK CHS series of integrated resistive humidity sensors with voltage output.
+Humidity signal: According to the American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE), the most comfortable humidity range is 30-60% relative humidity for human.[4] The relative humidity in the room(where we test our model) is about 50%, and the highest relative humidity when bathing is about 95%. So the RH signal range is around 50-95% and the value is measured one time a second. [1] 
 
-Sound signal: Sound signal is detected by sound intensity, which is defined as the power carried by sound waves per unit area in a direction perpendicular to that area. Sound intensity level is a logarithmic expression of sound intensity relative to a reference intensity.
+Sound signal: “Sound signal is detected by sound intensity, which is defined as the power carried by sound waves per unit area in a direction perpendicular to that area.” [5] Whether the sound signal could be detected is based on the distance of sensor and sound source and music sound signal. Sound signal in our project is a binary signal, which only have value of 0 or 1. In addition, we set the sleep time of sound sensor based on the light effect, which are 0.05s and 0.2s respectively. So the sound signal is detected every 0.05s and 0.2s. 
+
 The average sound intensity during time T is given by
 
 <p align="center">
@@ -344,7 +344,7 @@ The error in the project comes from three sources.
 * Control:As the test box is very small, when we use the steamer to simulate the shower mist, the air humidity in the box will increase to a high level instantly, making the two fans start to work almost at the same time. 
 
 ## OpenChirp
-OpenChirp is a management framework for Low-Power Wide-Area Networks (LP-WAN) that provides data context, storage, visualization, and access control over the web. We can directly utilize openchirp to control the switch of lights and fans. To relize this, we set up connettion between Raspberry Pi and OpenChirp, and then we run command on the openchrip webpage and send signal to our actuator devices. In that case, we can realize the goal of remoting control actuators.
+"OpenChirp is a management framework for Low-Power Wide-Area Networks (LP-WAN) that provides data context, storage, visualization, and access control over the web. We can directly utilize openchirp to control the switch of lights and fans."[6] To relize this, we set up connettion between Raspberry Pi and OpenChirp, and then we run command on the openchrip webpage and send signal to our actuator devices. In that case, we can realize the goal of remoting control actuators.
 
 Following are pictures of the results of our code and images drawn by OpenChirp websit.
 
@@ -399,9 +399,18 @@ We also published our data of sound module sensor. The image below only shows tw
 </p>
 
 ## Reference
-* https://en.wikipedia.org/wiki/Relative_humidity
-* https://en.wikipedia.org/wiki/Audio_signal
-* https://www.digikey.com/en/articles/techzone/2011/oct/humidity-sensors-and-signal-conditioning-choices
+[1] https://en.wikipedia.org/wiki/Relative_humidity
+
+[2] https://en.wikipedia.org/wiki/Audio_signal
+
+[3] https://www.digikey.com/en/articles/techzone/2011/oct/humidity-sensors-and-signal-conditioning-choices
+
+[4] https://www.brighthubengineering.com/hvac/81719-best-indoor-humidity-range-for-people-books-and-electronics/
+
+[5] https://en.wikipedia.org/wiki/Sound_intensity
+
+[6] https://openchirp.io/
+
 
 
 
