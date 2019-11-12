@@ -182,7 +182,7 @@ See the picture below: A is an electromagnet, B armature, C spring, D moving con
 </p>
 
 <p align="center">
-  Figure 8. 5V-2 Channel Relay Module
+  Figure 8. 5V-2 Channel Relay Module(http://wiki.sunfounder.cc/index.php?title=File:2cha3.jpg)
 </p>
 Add a certain voltage to the coil and some currents will pass through the coil thus generating the electromagnetic effect. The armature overcomes the tension of the spring and is attracted to the core, thus closing the moving contact of the armature and the normally open contact (or you may say releasing the former and the normally closed contact). After the coil is de-energized, the electromagnetic force disappears and the armature moves back to the original position, releasing the moving contact and normally closed contact. The closing and releasing of the contacts results in power on and off of the circuit.
 ##### Input
